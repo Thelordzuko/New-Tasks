@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f6f1eb; /* latte background */
+  color: #3b2f2f; /* dark roast text */
+}
+
+/* Main container */
+.dashboard {
+  max-width: 900px;
+  margin: 3rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(59, 47, 47, 0.15);
+}
+
+.dashboard h1 {
+  margin-bottom: 1.5rem;
+  color: #6f4e37; /* espresso */
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: #faf6f2;
+  padding: 1.3rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #eaded3;
+}
+
+.card h3 {
+  margin-bottom: 0.4rem;
+  color: #6f4e37;
+}
+
+.card.spent {
+  background: #fce8e6;
+  color: #8b2f2f; /* dark cocoa */
+}
+
+.card.remaining {
+  background: #e8f5ec;
+  color: #166534;
+}
+
+/* Form */
+.expense-form {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.expense-form input {
+  flex: 1;
+  padding: 0.65rem;
+  border-radius: 8px;
+  border: 1px solid #d6c4b2;
+  background: #fffaf6;
+}
+
+.expense-form input:focus {
+  outline: none;
+  border-color: #6f4e37;
+}
+
+/* Buttons */
+.expense-form button {
+  background: #6f4e37;
+  color: #ffffff;
+  border: none;
+  padding: 0.65rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.expense-form button:hover {
+  background: #5c3f2b;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eaded3;
+}
+
+th {
+  text-align: left;
+  background: #faf6f2;
+  color: #6f4e37;
+}
+
+/* Delete button */
+.delete {
+  background: #8b2f2f;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete:hover {
+  background: #732525;
+}
